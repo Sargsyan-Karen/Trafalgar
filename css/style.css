@@ -1,0 +1,490 @@
+@font-face{
+    font-family: "Mulish-Medium";
+    src: url(../fonts/Mulish-Regular.ttf); 
+}
+@font-face{
+     font-family: "Mulish-Bold";
+    src: url(../fonts/Mulish-Bold.ttf); 
+}
+@font-face{
+    font-family: "Mulish-Light";
+   src: url(../fonts/Mulish-Light.ttf); 
+}
+@font-face{
+    font-family: "Mulish-SemiBold";
+   src: url(../fonts/Mulish-SemiBold.ttf); 
+}
+
+body{
+    background-color:transparent;
+}
+img{
+    max-width:100%;
+}
+.my-conteiner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a:hover{
+    text-decoration:  none;
+}
+.button{
+    height: 56px;
+    width: 200px;
+    border-radius: 55px;
+    color: #458FF6;
+    font: 18px/60px "Mulish-Bold";
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    transition: 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.section-hover:hover{
+    background-color: #458FF6;
+    color: #ffffff;
+}
+
+
+/*header*/
+.header-block{
+    justify-content: space-around;
+   
+}
+.header-item:not(:last-child){
+    margin-right: 40px;
+}
+
+.header-item-link{
+    font: 18px/23px "Mulish-Medium";
+    color:  #1F1534;
+    opacity: 0.5;
+}
+.header-item-link:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.active-link{
+    font: "Mulish-Bold";
+    opacity: 1;
+}
+/* .header-nav{
+    margin-bottom: 186px;
+} */
+/*main*/
+.main-title{
+    min-height:112px;
+    font: 48px/56px "Mulish-Bold" ;
+    color:  #000000;
+    margin-bottom: 25px;
+    margin-top: 192px;
+}
+.main-text{
+    min-height:96px;
+    font: 21px/32px "Mulish-Light";
+    color: #7D7987;
+    margin-bottom: 48px;
+}
+.main-button{
+    background-color: #458FF6;
+    border: none;
+    color: #ffffff;
+
+}
+.main-button:focus{
+    outline: none;
+}
+.main-button:hover{
+    background-color: #ffffff;
+    color: #458FF6;
+    border: 1px solid  #458FF6;
+}
+.main-block2-img{
+    margin-top: 84px;
+    margin-bottom: 193px;
+}
+/*section1*/
+.section1-title{
+    height: 56px;
+    font: 36px/56px "Mulish-Bold";
+    color: #000000;
+    text-align: center;
+}
+.section1-title::after{
+    content:"";
+    display:block;
+    width: 56px;
+    height: 2px;
+    background-color:#000000;
+    border-radius:5px;
+    margin: 26px auto;   
+}
+.section1-text{
+    font: 18px/30px "Mulish-Light";
+    color: #7D7987;
+    text-align: center;
+    margin-top: 61px;
+    margin-bottom: 80px;
+}
+/*section1-block*/
+.section1-block{
+    margin:0 10px 10px 0;
+    height: 354px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    padding: 61px 0 0 76px;
+}
+
+.section1-block-title{
+    font: 24px/56px "Mulish-Bold";
+    color: #000000;
+}
+
+.section1-block-text{
+    height: 84px;
+    font: 16px/28px "Mulish-Light";
+    color: #7D7987;
+}
+
+.section1-button{
+    margin: 72px auto;
+    margin-bottom: 220px;
+}
+
+
+.section1-button:focus{
+    outline: none;
+}
+
+/*section2*/
+.section2-title{
+    font: 36px/56px "Mulish-Bold";
+    color: #000000;
+}
+.section2-title::after{
+    content:"";
+    display:block;
+    width: 56px;
+    height: 2px;
+    background-color:#000000;
+    border-radius:5px;
+    margin: 26px auto;   
+}
+.section2-text{
+    font: 18px/30px "Mulish-Light";
+    color: #7D7987;
+    margin-top:59px;
+}
+.section2-button{
+    margin: 40px auto 261px ;
+}
+/* .section2-block{
+    margin-left: 142px;
+} */
+/*section3*/
+.section3-block{
+    margin-bottom: 40px;
+}
+.section3-title{
+    font: 36px/48px "Mulish-Bold";
+    color: #000000;
+    margin-bottom: 63px;
+}
+.section3-title::after{
+    content:"";
+    display:block;
+    width: 56px;
+    height: 2px;
+    background-color:#000000;
+    border-radius:5px;
+    margin-top: 30px;   
+    margin: 0 70px;
+}
+.section3-text{
+    font: 18px/30px "Mulish-Light";
+    color: #7D7987;
+    margin-bottom: 40px;
+}
+
+.download{
+    padding-left:10px ;
+}
+
+.section3-button:hover span {
+    position: relative;
+    animation: download 1s infinite;
+}
+
+  /* .section3-img{
+      margin-left: 71px;
+  } */
+  /*carousel*/
+  .carousel-blocks{
+    min-height:426px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    margin-bottom:150px;
+}
+.main-customers{
+    position:relative;
+}
+.customers-circle{
+   position:absolute;
+   right:0;
+}
+.carousel-blocks-title{
+    color:white;
+    text-align:center;
+    padding-top:30px;
+    font: 36px/48px "Mulish-Bold";
+}
+
+.edward{
+    display: flex;
+    align-items: center;
+    margin-left:80px;  
+}
+.edward-newgate{
+    color:white;
+    margin-left:15px;
+    font: 22px/48px "Mulish-Bold"
+}
+.edward-newgate2{
+    font:18px/48px "Mulish-Light";
+    color: rgba(255, 255, 255, 0.85)
+}
+.edward-info{
+    color: rgba(255, 255, 255, 0.9);
+    font: 19px/30px "Mulish-Light";
+    padding: 20px;
+}
+
+.carousel-indicators li{
+    background-color:#0000ff;
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+}
+  /*section4*/
+  .section4-title{
+      font: 36px/56px "Mulish-Bold";
+      color: #000000;
+      text-align: center;
+  }
+  .section4-title::after{
+    content:"";
+    display:block;
+    width: 56px;
+    height: 2px;
+    background-color:#000000;
+    border-radius:6px;
+    margin: 26px auto;   
+}
+.section4-block{
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.section4-text{
+    padding-left: 34px;
+}
+.section4-block-title{
+    font: 21px/32px "Mulish-Bold";
+    color: #000000;
+}
+.section4-block-text{
+    font: 16px/28px "Mulish-Light";
+    color: #7D7987;
+}
+.section4-button{
+    font: 17px/28px "Mulish-SemiBold";
+    border: none;
+}
+.section4-button:focus{
+    outline: none;
+}
+.section4-button:hover .section4-button-img{
+    position: relative;
+    animation: mymove 3s infinite;
+   
+}
+
+.section4-button2{
+    margin: 69px auto; 
+}
+.section4-button2:hover{
+    background-color: #458FF6;
+    color: #ffffff;
+}
+.section4-button2:focus{
+    outline: none;
+}
+/*footer*/
+footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);;
+    min-height:500px;
+}
+.footer{
+    color: #FFFFFF;
+    margin-left:40px;
+    font: 24px/30px "Mulish-Bold";
+}
+.footer-img{
+    margin-bottom: 10px;
+}
+.footer-text{
+    color:white;
+    text-align:center;
+    font: 18px/28px "Mulish-Light"
+}
+.footer-copyright{
+    color:white;
+    text-align:center;
+    font: 16px/28px "Mulish-Light";
+}
+.footer-caption{
+    color:white;
+    font: 20px/60px "Mulish-Bold";
+}
+.footer-contacts{
+    list-style-type: none;
+}
+
+.footer-link{
+    color:white;
+    font: 18px/38px "Mulish-Light";
+}
+.footer-link:hover{
+    text-decoration:none;
+}
+.footer-conteiner{
+    padding-top:110px;
+    padding-bottom:110px;
+    display: flex;
+}
+
+/*keyframes */
+@keyframes download {
+    from {top: 0px;}
+    to {top: 10px;}
+  }
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 20px;}
+  }
+
+/*media*/
+
+@media only screen and (max-width: 1130px) {
+    .section3-title{
+        text-align: center;
+    }
+    .section2-title{
+        text-align: center;
+    }
+.section4-block{
+    text-align: center;
+    padding-left: 20px;
+}
+.section4-button{
+    margin: 0  auto ;
+}
+.order{
+    order: 1;
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+    .section1-block {
+     text-align: center;
+     padding: 0 15px;
+     margin: 15px auto;
+    }
+    .section3-block{
+        margin-bottom:50px;
+    }
+    
+  }
+  @media only screen and (max-width: 540px) {
+    .main-block1{
+        text-align: center;
+    }
+    .main-button{
+        margin: 0 auto;
+    }
+    .title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .section3-img{
+        margin: 60px auto;
+    }
+    .section1-block-text{
+        width: 271px;
+        text-align: center;
+    }
+   
+}
+@media only screen and (min-width: 940px) {
+    .section4-block{
+        text-align: center;
+    }
+    .section3-title::after{
+        margin: 26px auto;
+    }
+}
+@media only screen and (min-width: 926px) {
+    .section3-img {
+    max-width: 75%;
+    margin-left: 54px;
+    text-align: center;
+    margin:50px auto
+    }
+  }
+@media only screen and (min-width: 750px) {
+    .section3-title::after{
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 670px) {
+    .section3-img {
+      max-width: 80%;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .section3-title::after{
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .section3-title::after{
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 385px) {
+    .section3-title::after{
+        margin: 0 auto;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
